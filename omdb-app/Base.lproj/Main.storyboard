@@ -36,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfz-IQ-5qJ">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <connections>
                                     <segue destination="r2v-pa-tvT" kind="embed" id="FOZ-pi-YbO"/>
                                 </connections>
@@ -44,7 +44,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hfz-IQ-5qJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3w8-6g-Rtl"/>
+                            <constraint firstItem="hfz-IQ-5qJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="2Kz-wh-Lxa"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hfz-IQ-5qJ" secondAttribute="bottom" id="IX0-ea-wzs"/>
                             <constraint firstItem="hfz-IQ-5qJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gfG-j5-4VU"/>
                             <constraint firstAttribute="trailing" secondItem="hfz-IQ-5qJ" secondAttribute="trailing" id="tjp-vp-EiI"/>
@@ -76,15 +76,15 @@
                         <viewControllerLayoutGuide type="bottom" id="BZ3-4g-AfF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zpW-DG-0q1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A7V-4Z-rAZ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="80" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="A7V-4Z-rAZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" id="ri5-P5-xM7" customClass="MovieTableViewCell" customModule="omdb_app" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="80"/>
+                                        <rect key="frame" x="0.0" y="1" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ri5-P5-xM7" id="oAq-t2-9zU">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
@@ -142,9 +142,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="A7V-4Z-rAZ" firstAttribute="leading" secondItem="zpW-DG-0q1" secondAttribute="leading" id="0QQ-pS-5Ij"/>
+                            <constraint firstItem="A7V-4Z-rAZ" firstAttribute="top" secondItem="zpW-DG-0q1" secondAttribute="top" id="JYc-9e-wZg"/>
                             <constraint firstItem="BZ3-4g-AfF" firstAttribute="top" secondItem="A7V-4Z-rAZ" secondAttribute="bottom" id="Ra6-Se-NMu"/>
                             <constraint firstAttribute="trailing" secondItem="A7V-4Z-rAZ" secondAttribute="trailing" id="kLS-bD-gc7"/>
-                            <constraint firstItem="A7V-4Z-rAZ" firstAttribute="top" secondItem="zHH-9q-feA" secondAttribute="bottom" id="z2e-UM-m8b"/>
                         </constraints>
                     </view>
                     <connections>
@@ -193,14 +193,14 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlF-HO-RkV">
-                                <rect key="frame" x="285" y="525" width="30" height="30"/>
+                                <rect key="frame" x="285" y="550" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="add:" destination="amE-BF-4Lm" eventType="touchUpInside" id="EmN-l8-p27"/>
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBO-Ja-mDv">
-                                <rect key="frame" x="0.0" y="83" width="600" height="437"/>
+                                <rect key="frame" x="0.0" y="83" width="600" height="462"/>
                                 <connections>
                                     <segue destination="U3Z-Qj-Nvb" kind="embed" identifier="movieDetailSegue" id="Fui-jW-gwg"/>
                                 </connections>
@@ -219,10 +219,11 @@
                             <constraint firstItem="YlF-HO-RkV" firstAttribute="centerX" secondItem="Foi-Qb-6lm" secondAttribute="centerX" id="QGm-9q-vlb"/>
                             <constraint firstItem="ZBO-Ja-mDv" firstAttribute="leading" secondItem="Foi-Qb-6lm" secondAttribute="leading" id="SuD-hO-j0u"/>
                             <constraint firstAttribute="trailing" secondItem="kA7-qb-xnv" secondAttribute="trailing" constant="1" id="XtQ-7d-GBE"/>
-                            <constraint firstItem="p1c-P6-AfB" firstAttribute="top" secondItem="YlF-HO-RkV" secondAttribute="bottom" constant="45" id="bRn-Ph-avp"/>
+                            <constraint firstItem="p1c-P6-AfB" firstAttribute="top" secondItem="YlF-HO-RkV" secondAttribute="bottom" constant="20" id="bRn-Ph-avp"/>
                             <constraint firstItem="qNB-cD-7FR" firstAttribute="centerY" secondItem="F8L-hW-qoB" secondAttribute="centerY" id="dH1-wK-Hur"/>
                             <constraint firstItem="ZBO-Ja-mDv" firstAttribute="top" secondItem="kA7-qb-xnv" secondAttribute="bottom" id="drt-ae-6Ly"/>
                             <constraint firstItem="YlF-HO-RkV" firstAttribute="top" secondItem="ZBO-Ja-mDv" secondAttribute="bottom" constant="5" id="eeH-RY-OLl"/>
+                            <constraint firstItem="ZBO-Ja-mDv" firstAttribute="width" secondItem="Foi-Qb-6lm" secondAttribute="width" id="owo-qs-qLv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qNB-cD-7FR" secondAttribute="trailing" constant="5" id="yiy-9a-F5z"/>
                         </constraints>
                     </view>
@@ -233,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Xa-st-Liy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="974"/>
+            <point key="canvasLocation" x="1033" y="1041"/>
         </scene>
         <!--Movie Detail View Controller-->
         <scene sceneID="0st-Qg-XHA">
@@ -244,11 +245,11 @@
                         <viewControllerLayoutGuide type="bottom" id="hxa-oj-kfO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jCM-un-TZ5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="437"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="462"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20p-Yy-7z5">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="437"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="462"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mls-5s-THc">
                                         <rect key="frame" x="16" y="16" width="100" height="150"/>
@@ -408,7 +409,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="20p-Yy-7z5" secondAttribute="bottom" id="75q-T2-Csj"/>
                             <constraint firstItem="20p-Yy-7z5" firstAttribute="leading" secondItem="jCM-un-TZ5" secondAttribute="leading" id="I2q-vu-iJG"/>
-                            <constraint firstAttribute="trailing" secondItem="20p-Yy-7z5" secondAttribute="trailing" id="e2f-Yn-yhq"/>
+                            <constraint firstItem="20p-Yy-7z5" firstAttribute="width" secondItem="jCM-un-TZ5" secondAttribute="width" id="R9N-cR-1fN"/>
                             <constraint firstItem="20p-Yy-7z5" firstAttribute="top" secondItem="jCM-un-TZ5" secondAttribute="top" id="grY-aE-z6o"/>
                         </constraints>
                     </view>
