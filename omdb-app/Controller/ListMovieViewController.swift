@@ -54,4 +54,14 @@ class ListMovieViewController: UIViewController, UITableViewDelegate, UITableVie
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
+
+    // MARK: UITableViewDataSource
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let addMovieVC = self.storyboard?.instantiateViewControllerWithIdentifier("addMovieVC") as? AddMovieViewController
+        if let addMovieVC = addMovieVC {
+            addMovieVC.movie = movies?[indexPath.row]
+            addMovieVC.onlyRead = true
+            self.navigationController?.pushViewController(addMovieVC, animated: true)
+        }
+    }
 }

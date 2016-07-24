@@ -19,9 +19,23 @@ class AddMovieViewController: UIViewController {
     let httpService = HttpService()
     var movie: MovieDB?
     var detailViewController: DetailMovieInImdbProtocol?
+    var onlyRead = false
 
     @IBOutlet weak var inputText: UITextField!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var addButton: UIButton!
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        if onlyRead {
+            inputText.enabled = false
+            addButton.enabled = false
+            searchButton.enabled = false
+            detailViewController?.fillDetails(movie)
+        }
+    }
 
     @IBAction func search(sender: AnyObject) {
         if let text = inputText.text {

@@ -228,8 +228,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="YlF-HO-RkV" id="6zG-Gl-dca"/>
                         <outlet property="containerView" destination="ZBO-Ja-mDv" id="iyi-8n-g8V"/>
                         <outlet property="inputText" destination="F8L-hW-qoB" id="j16-Gi-PJv"/>
+                        <outlet property="searchButton" destination="qNB-cD-7FR" id="fDr-R6-AlB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Xa-st-Liy" userLabel="First Responder" sceneMemberID="firstResponder"/>
