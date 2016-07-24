@@ -22,29 +22,12 @@ class DatabaseProviderTests: QuickSpec {
 
             let movie: Movie = try! Movie(json: JSON(jsonString: jsonString))
 
-            DatabaseProvider.insertAllObjects([movie.transform()])
+            DatabaseProviderTestsIntance.insertAllObjects([movie.transform()])
 
-            let dbMovies = DatabaseProvider.fechtAllMoviesOrderedByTitle()
+            let dbMovies = DatabaseProviderTestsIntance.fechtAllMoviesOrderedByTitle()
             expect(dbMovies).toNot(beNil())
             expect(dbMovies!.count).toNot(equal(0))
         }
     }
-
-}
-
-//MARK: extension to use memory database
-extension DatabaseProvider {
-
-    public var currentRealm: Realm? {
-        var inicialRealm: Realm?
-        do {
-            try inicialRealm = Realm(configuration: Realm.Configuration(inMemoryIdentifier: "memoryObjects"))
-        } catch _ {
-            NSLog("Couldnt get the default REALM", [])
-        }
-
-        return inicialRealm
-    }
-
 
 }

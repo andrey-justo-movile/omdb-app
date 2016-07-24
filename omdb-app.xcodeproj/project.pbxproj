@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2CAE6AA2F25157BC7B5666F3 /* Pods_omdb_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC3C5B7EF27DC0FC7C3D178 /* Pods_omdb_appTests.framework */; };
 		9B4A04E3B8BDF9145E2D3F3D /* Pods_omdb_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E18EE7B42DACEEBBA017133 /* Pods_omdb_app.framework */; };
+		C723D3891D4539CA009F89CD /* DatabaseProviderTestsIntance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723D3881D4539CA009F89CD /* DatabaseProviderTestsIntance.swift */; };
 		C74E26511D43E0D60025ECD5 /* HttpServiceRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E26501D43E0D60025ECD5 /* HttpServiceRequests.swift */; };
 		C74E26531D43E6AE0025ECD5 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E26521D43E6AE0025ECD5 /* HttpService.swift */; };
 		C79036921D43EF36002FA0A9 /* HttpServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79036911D43EF36002FA0A9 /* HttpServiceTests.swift */; };
@@ -56,6 +57,7 @@
 		76FB6C930AB0C26CBC4CE8DC /* Pods-omdb-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-omdb-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-omdb-app/Pods-omdb-app.release.xcconfig"; sourceTree = "<group>"; };
 		9BC3C5B7EF27DC0FC7C3D178 /* Pods_omdb_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_omdb_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0680E806A1CE3DFD323E769 /* Pods-omdb-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-omdb-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-omdb-app/Pods-omdb-app.debug.xcconfig"; sourceTree = "<group>"; };
+		C723D3881D4539CA009F89CD /* DatabaseProviderTestsIntance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseProviderTestsIntance.swift; sourceTree = "<group>"; };
 		C74E26501D43E0D60025ECD5 /* HttpServiceRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpServiceRequests.swift; path = Http/HttpServiceRequests.swift; sourceTree = "<group>"; };
 		C74E26521D43E6AE0025ECD5 /* HttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpService.swift; path = Http/HttpService.swift; sourceTree = "<group>"; };
 		C79036911D43EF36002FA0A9 /* HttpServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServiceTests.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				C7E13FD81D43C4F0009B2122 /* Info.plist */,
 				C79036911D43EF36002FA0A9 /* HttpServiceTests.swift */,
 				C7E034D61D44050700E7DFDE /* DatabaseProviderTests.swift */,
+				C723D3881D4539CA009F89CD /* DatabaseProviderTestsIntance.swift */,
 			);
 			path = "omdb-appTests";
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 			files = (
 				C7E13FD71D43C4F0009B2122 /* omdb_appTests.swift in Sources */,
 				C79036921D43EF36002FA0A9 /* HttpServiceTests.swift in Sources */,
+				C723D3891D4539CA009F89CD /* DatabaseProviderTestsIntance.swift in Sources */,
 				C7E034D71D44050700E7DFDE /* DatabaseProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
